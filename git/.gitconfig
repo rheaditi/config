@@ -1,0 +1,37 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Aditi Mohanty
+	email = rheaditi@users.noreply.github.com
+[alias]
+	# one-line log
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	
+	# Normal Checkout
+	co = checkout 
+	# Checkout Branch
+	cob = checkout -b 
+
+	# Status
+	st = status
+	# Short Status
+	ss = status -s 
+
+	# Add All 
+	aa = add .
+
+	# My default commits
+	com = commit -am
+
+	# Find something in a file
+	f = "!git ls-files | grep -i"
+
+	# List all Aliases 
+	la = "!git config -l | grep alias | cut -c 7-"
+[github]
+	user = rheaditi
+[push]
+	default = matching
+[core]
+	trustctime = false
+	autocrlf = true
